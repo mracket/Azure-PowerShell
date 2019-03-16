@@ -1,0 +1,2 @@
+$Credentials = New-Object Microsoft.Azure.Commands.ActiveDirectory.PSADPasswordCredential -Property @{ StartDate=Get-Date; EndDate=Get-Date -Year 2024; Password="~kFa*G*)s3P.)tW5"}
+$ServicePrincipal = New-AzAdServicePrincipal -DisplayName CitrixlabAutomation -PasswordCredential $Credentials 
